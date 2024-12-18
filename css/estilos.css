@@ -1,34 +1,81 @@
 body {
-    background-color: #f0f0f0;
-    color: #1b1b1b;
-    font-family: Arial, sans-serif;
-  }
-  .navbar {
-    background-color: #000000;
-  }
-  .navbar-brand img {
-    width: 100px;
-  }
-  .nav-link {
-    color: white;
-  }
-  .nav-link:hover{
-    color: gray ; 
-  }
-.nav-link:focus {
-  color: #8a8a8a !important; /* Un tono gris más oscuro */
-  background-color: transparent; /* Evita que tenga fondo */
+  background-color: #f0f0f0;
+  color: #1b1b1b;
+  font-family: Arial, sans-serif;
 }
-  .navbar-toggler-icon {
-    filter: invert(1); /* Invierte el color (para un fondo oscuro, usa 1) */
-  }
-  .carousel-inner img {
-    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
-    height: 200px; /* Altura fija del carrusel */
+
+.navbar {
+  background-color: #000000;
+}
+
+.navbar-brand img {
+  width: 100px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+.nav-link:focus {
+  color: #8a8a8a !important;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* navbar responsive para pantallas grandes */
+@media (min-width: 992px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-.container img{
+  .navbar-brand img {
+    margin-left: 2rem; /* Logo alineado a la izquierda */
+  }
+
+  .navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ítems centrados */
+  }
+
+  .btn-carrito {
+    margin-left: auto; /* Carrito a la derecha */
+  }
+
+
+.carousel-inner img {
+  object-fit: cover; 
+  height: 200px;
+  height: auto;
+}
+
+.container img {
   display: flex;
   height: 60px;
   width: 60px;
 }
+
+/* ajustes responsive pantalla mediana  */
+@media (min-width: 768px) {
+  .carousel-inner {
+    height: 400px;
+  }
+}
+
+/* ajustes responsive pantalla grande  */
+@media (min-width: 992px) {
+  .carousel-inner {
+    height: 400px;
+    width: auto;
+  }
+}
+
