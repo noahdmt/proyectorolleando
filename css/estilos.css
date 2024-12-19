@@ -31,12 +31,16 @@ body {
 
 /* navbar responsive para pantallas grandes */
 @media (min-width: 992px) {
-  .navbar {
+  /* .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
+  } */
+.container-fluid{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
   .navbar-brand img {
     margin-left: 2rem; /* Logo alineado a la izquierda */
   }
@@ -48,9 +52,12 @@ body {
   }
 
   .btn-carrito {
-    margin-right: auto; /* Carrito a la derecha */
+order: 1; 
   }
 
+.botoninicio{ 
+  margin-bottom: 1rem;
+}
 
 .carousel-inner img {
   object-fit: cover; 
