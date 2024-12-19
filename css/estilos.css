@@ -48,7 +48,7 @@ body {
   }
 
   .btn-carrito {
-    margin-left: auto; /* Carrito a la derecha */
+    margin-right: auto; /* Carrito a la derecha */
   }
 
 
@@ -63,7 +63,7 @@ body {
   height: 60px;
   width: 60px;
 }
-
+}
 /* ajustes responsive pantalla mediana  */
 @media (min-width: 768px) {
   .carousel-inner {
