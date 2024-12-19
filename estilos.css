@@ -44,3 +44,12 @@ body{
         border-radius: 5%;
         text-align: center;
     }
+    @media (max-width: 778px) {
+        footer {
+          flex-direction: column;
+          text-align: center;
+        }
+        footer .seccion {
+          margin-bottom: 1.25rem;
+        }
+      }
